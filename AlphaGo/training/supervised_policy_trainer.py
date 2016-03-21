@@ -8,7 +8,7 @@ from AlphaGo.models.policy import CNNPolicy
 
 class supervised_policy_trainer:
     def __init__(self,train_batch_size,test_batch_size=None,
-                 learning_rate=.003,decay=.0001,nb_epoch=10):
+                 learning_rate=.003,decay=.0001,nb_epoch=10,nb_worker=1):
     	"""Construct a supervised-learning policy trainer.
 
     	Training parameters:
